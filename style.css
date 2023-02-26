@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1,h2,h3{
+    font-family: 'Tilt Warp', cursive;
+}
+
+/* logo styling */
+.logo{
+    margin: 10px 14px;
+}
+.logo img{
+    width: 3rem;
+    border-radius: 100% ;
+    border: 2px solid black;
+}
+
+/* navigation bar styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: sticky;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+}
+nav ul{
+    display: flex;
+    font-family: 'Anton', sans-serif;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 15px;
+    font-size: 1.2rem;
+
+}
+nav ul li a{ 
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: -3px -3px black;
+}
+nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+a:hover{ 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(254, 254, 254);
+    text-decoration: none;
+    color: black;
+    text-shadow: none;
+}
+/* main header styling */
+.heading::before{
+    content: "";
+    background: url(images/pexels-antony-trivet-13354566.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height:850px;
+    z-index: -1;
+    opacity: 0.89;
+    /* top: 0;
+    left: 0; */
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10rem 20rem 19rem;
+    color: rgb(255, 251, 251);
+    font-size: 1.5rem;
+    /* flex-wrap: wrap; */
+    
+}
+.heading h1{
+    font-weight: 900;
+    text-shadow: 6px -1.3px black;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.heading p{
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    text-shadow: -3px -3px black;
+    line-height: 2.5rem;
+    margin: auto 4rem;
+    text-align: center;
+}
+.btn{
+    padding: 10px;
+    font-size: 20px;
+    align-self: center;
+    background-color: rgb(230, 216, 163);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:rgb(228, 210, 145) ;
+    transform: scale(1.1);
+}
+
+/* service section styling */
+#services-cont{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.services{
+    display: flex;
+    justify-content:space-evenly;
+}
+.cards{
+    border: 2px solid brown;
+    border-radius: 5px;
+    width: 26rem;
+    height: 22rem;
+    margin-top: 1rem;
+    background-color: rgb(234, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#cater{
+    width: 10rem;
+    margin: 1.7rem;
+
+}
+#order{
+    width: 14rem;
+    margin: 2.4rem;
+}
+#delivery{
+    width: 12rem;
+    margin: 1.9rem;
+}
+.head-cards{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.para-cards{
+    margin: 0 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    
+}
+.head-centre{
+    font-size: 2.5rem;
+    margin: 0.3rem;
+    align-self: center;
+}
+
+/* contact section styling */
+.contact::before{
+    content: "";
+    background: url(images/pexels-felix-mittermeier-1146134.jpg);
+    position: absolute;
+    width: 100%;
+    height: 720px;
+    z-index: -1;
+    opacity: 0.89;
+    /*
+    top: 100%; */
+    /* bottom: -40rem; */
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: end ;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.contact h1{
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    color: white;
+}
+.contact-form{
+    width: 40rem;
+    border: 2px solid black;
+    padding: 1.5rem;
+    border-radius: 5px;
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
+    margin: 3rem 0 5rem;
+    z-index: -1;
+    
+}
+label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+input{
+    height: 2rem;
+    border: 2px solid black;
+    padding: 5px;
+    font-size:1rem;
+    outline: none;
+}
+input:focus{
+    border: 3px solid black; 
+    /* /* display: none; */
+}
+textarea{
+    border: 2px solid black;
+    padding: 5px;
+    font-size:1rem;
+    outline: none;
+}
+textarea:focus{
+    border: 3px solid black; 
+    /* /* display: none; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#top{
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(162, 159, 159);
+    position:fixed;
+    /* z-index: 2; */
+    right: 3rem;
+    bottom: 3rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+    
+}
+#top img{
+    width: 2rem;
+}

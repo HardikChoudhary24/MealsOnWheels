@@ -1,0 +1,33 @@
+/* navigation  */
+.logo{
+    margin: 0 14px;
+}
+nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    padding: 0;
+}
+a:hover{
+    padding: 7px;
+}
+
+/* home  */
+.heading{
+    padding: 7rem 0 19rem;
+}
+
+
+/* services  */
+.services{
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+.cards{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+/* contact  */
